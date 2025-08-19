@@ -37,7 +37,7 @@ export default function MoviesGrid() {
      switch(rating){
         case "All Ratings" : return true;
         case "Good" : return movie.rating >=8;
-        case "Okay" : return movie.rating >=5 && movie.rating <8;
+        case "Okayy" : return movie.rating >=5 && movie.rating <8;
         case "Bad" : return movie.rating < 5;
         default : return false
      }
