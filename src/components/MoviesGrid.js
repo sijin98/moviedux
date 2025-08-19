@@ -45,7 +45,7 @@ export default function MoviesGrid() {
     };
 
     const filteredMovies = movies.filter(movie => 
-        matchesGenre(movie, genre) && matchesSearchTerm(movie , searchTerm) && matchesRating(movie, rating));
+        matchesGenre(movie, genre) && matchesRating(movie, rating) && matchesSearchTerm(movie , searchTerm));
 
     return (
         <div>
