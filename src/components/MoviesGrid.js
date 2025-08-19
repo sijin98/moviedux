@@ -37,7 +37,7 @@ export default function MoviesGrid() {
      switch(rating){
         case "All Ratings" : return true;
         case "Good" : return movie.rating >=8;
-        case "Ok" : return movie.rating >=5 && movie.rating <8;
+        case "Okay" : return movie.rating >=5 && movie.rating <8;
         case "Bad" : return movie.rating < 5;
         default : return false
      }
@@ -65,7 +65,7 @@ export default function MoviesGrid() {
                     <select value={rating} onChange={handleRatings} className="filter-dropdown">
                         <option>All Ratings</option>
                         <option>Good</option>
-                        <option>Ok</option>
+                        <option>Okay</option>
                         <option>Bad</option>
                     </select>
                 </div>
